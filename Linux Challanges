@@ -1,0 +1,68 @@
+Task 1: Basic Task
+
+The starting directory on my system was /home/recruit.
+The ls command 'finds' the desktop folder amongst the listed directories in the recruit directory.
+
+Command 1: cd Desktop
+Command 2: mkdir myProject
+Command 3: cd myProject
+Command 4: touch app.js
+Command 5: cd ..
+Command 6: mkdir myProject2
+Command 7: cd myProject
+Command 8: cp app.js /home/recruit/Desktop/myProject2
+
+Task 2: Absolute and Relative Paths
+
+The starting directory on my system is /home/recruit.
+
+Command 1: cd ..        //Puts us in the home directory.
+Command 2: touch exercise.txt   //sudo su and password should the system return a Permission denied error when typing this command.
+Command 3: mv exercise.txt /tmp         //Moves file to /tmp
+Command 4: rm /tmp/exercise.txt         //deletes text file without having to change directories (using absolute pathname)
+
+Task 3: Cat Commands
+
+Working from the /home directory.
+
+# 1: touch umuzi.txt recruit.txt cohort.txt
+# 2: manually add content to each file.
+# 3: cat *.txt          // Displays content in all .txt files
+# 4: cat *.txt > summary.txt
+# 5: echo "add this content" >> summary.txt
+
+Task 4: The locate command
+
+# 1: find / -name umuzi*
+# 2: find / -name umuzi* > search_result.txt
+
+Task 5:
+
+Command 1: mkdir myDocuments
+Command 2: cd myDocuments 
+Command 3: touch pad.txt
+Command 4: cd ..
+Command 5: cd Desktop
+Command 6: mkdir work
+Command 7: cd work
+Command 8: cp /home/recruit/myDocuments/pad.txt ./pad_copy.txt
+Command 9: locate updatedb
+Command 10: cd -
+Command 11: find /home/recruit/Desktop/ -name pad*
+
+Task 6:
+
+# 1: find / -name '*.pdf'
+// For "permission denied" error please first log in as a super user
+# 2 - Command 1: sudo su and then type password
+    - Command 2: find . -iname '*.pdf' -exec cp {} work \;
+# 3: find / -mtime -1 -print
+
+Task 7: Text editor
+
+# 1: nano my_bio.txt
+# 2: Ctrl + O and then click Enter. Ctrl + X
+# 3: mv my_bio.txt /home/recruit/my_files/ 
+
+
+
